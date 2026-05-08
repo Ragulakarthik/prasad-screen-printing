@@ -3,12 +3,13 @@ export const site = {
   business: "Prasad Screen Printing",
   owner: "Ragula Prasad",
   tagline: "Crafting impressions since 1995",
-  // TODO: replace with real contact info
-  phone: "+91 00000 00000",
-  whatsapp: "910000000000", // digits only, with country code
-  email: "hello@prasadscreenprinting.com",
-  address: "Your Shop Address, City, State",
+  phone: "+91 80080 41620",
+  whatsapp: "918008041620", // digits only, with country code
+  email: "raghulakarthik04@gmail.com",
+  address:
+    "Back Side, Jumma Masjid, near 2nd Gandhi Statue, YV Street, Ganagapeta, Kadapa, Andhra Pradesh 516001",
   hours: "Mon – Sat · 9:30 AM – 8:30 PM",
+  googleMapsUrl: "https://share.google/b7mdZAoLVe9tC7CLn",
   googleBusinessUrl: "#",
   instagram: "#",
 };
