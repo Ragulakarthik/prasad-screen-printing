@@ -15,7 +15,7 @@ export const site = {
 };
 
 export const stats = [
-  { value: "30+", label: "Years of craft" },
+  { value: "20+", label: "Years of craft" },
   { value: "10K+", label: "Happy customers" },
   { value: "500+", label: "Wedding cards / month" },
   { value: "99%", label: "On-time delivery" },
