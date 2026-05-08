@@ -1,40 +1,48 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import sampleWedding from "@/assets/sample-wedding.jpg";
-import sampleTshirts from "@/assets/sample-tshirts.jpg";
-import sampleVisiting from "@/assets/sample-visiting.jpg";
-import sampleId from "@/assets/sample-id.jpg";
-import sampleFlags from "@/assets/sample-flags.jpg";
-import heroCards from "@/assets/hero-cards.jpg";
+import workTshirt from "@/assets/work-tshirt-swaggers.jpg";
+import workTshirt2 from "@/assets/work-tshirt-swaggers-2.jpg";
+import workMenuFolders from "@/assets/work-menu-folders.jpg";
+import workCapsWhite from "@/assets/work-caps-white.jpg";
+import workCapsRed from "@/assets/work-caps-red.jpg";
+import workPens from "@/assets/work-pens.jpg";
+import workLanyards from "@/assets/work-lanyards.jpg";
+import workJuteBags from "@/assets/work-jute-bags.jpg";
+import workHospitalKits from "@/assets/work-hospital-kits.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: "Gallery — Prasad Screen Printing" },
-      { name: "description", content: "Browse samples of wedding cards, custom apparel, visiting cards, ID cards and more from Prasad Screen Printing." },
+      { name: "description", content: "Real customer work from Prasad Screen Printing — custom T-shirts, caps, menu folders, pens, lanyards, jute bags and more." },
       { property: "og:title", content: "Gallery — Prasad Screen Printing" },
-      { property: "og:description", content: "Sample work from three decades of screen printing craft." },
+      { property: "og:description", content: "Real customer work from two decades of screen printing craft." },
+      { property: "og:image", content: workTshirt },
     ],
   }),
   component: GalleryPage,
 });
 
 const items = [
-  { src: heroCards, label: "Wedding Cards", span: "md:col-span-2 md:row-span-2" },
-  { src: sampleTshirts, label: "Sports Jerseys" },
-  { src: sampleVisiting, label: "Visiting Cards" },
-  { src: sampleWedding, label: "Premium Invitations" },
-  { src: sampleId, label: "ID Cards & Pads" },
-  { src: sampleFlags, label: "Flags & Pens", span: "md:col-span-2" },
+  { src: workTshirt, label: "Custom Group T-Shirts", span: "md:col-span-2 md:row-span-2" },
+  { src: workCapsRed, label: "Branded Caps — RKTA Kadapa" },
+  { src: workMenuFolders, label: "Restaurant Menu Folders" },
+  { src: workJuteBags, label: "Wedding Jute Return Gifts" },
+  { src: workPens, label: "Promotional Pens" },
+  { src: workLanyards, label: "College ID Lanyards" },
+  { src: workCapsWhite, label: "Corporate Caps", span: "md:col-span-2" },
+  { src: workHospitalKits, label: "Hospital Kit Bags" },
+  { src: workTshirt2, label: "Farewell T-Shirts" },
 ];
 
 function GalleryPage() {
   return (
     <section className="mx-auto max-w-7xl px-6 pt-20 pb-24">
       <div className="text-center">
-        <span className="ornament">Sample work</span>
+        <span className="ornament">Real customer work</span>
         <h1 className="mt-4 font-display text-5xl md:text-6xl text-primary">Our gallery</h1>
         <p className="mt-5 text-muted-foreground max-w-2xl mx-auto">
-          A small glimpse of the prints leaving our press every week. Want something similar?
+          Actual orders delivered from our press — T-shirts, caps, bags, pens, lanyards and more.
+          Want something similar?
           <Link to="/contact" className="text-gold ml-1 hover:underline">Get in touch</Link>.
         </p>
       </div>
@@ -54,10 +62,6 @@ function GalleryPage() {
           </div>
         ))}
       </div>
-
-      <p className="mt-10 text-center text-sm text-muted-foreground">
-        Real customer photos coming soon — uploaded by Karthik.
-      </p>
     </section>
   );
 }
