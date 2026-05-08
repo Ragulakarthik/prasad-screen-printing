@@ -78,11 +78,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Prasad Screen Printing — Wedding Cards, Custom Apparel & Prints" },
       { name: "description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 2004." },
       { name: "author", content: "Ragula Prasad" },
-      { property: "og:title", content: "Prasad Screen Printing" },
-      { property: "og:description", content: "Wedding cards, visiting cards, custom T-shirts, ID cards, flags and more — handcrafted since 2004." },
+      { property: "og:title", content: "Prasad Screen Printing — Wedding Cards, Custom Apparel & Prints" },
+      { property: "og:description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 2004." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Prasad Screen Printing — Wedding Cards, Custom Apparel & Prints" },
+      { name: "twitter:description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 2004." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1688b0c-f093-4f8c-af16-d8a938f113ef/id-preview-333b7be4--c812c0e3-e3e2-4bb8-8186-a24ac8e65dd9.lovable.app-1778239274756.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1688b0c-f093-4f8c-af16-d8a938f113ef/id-preview-333b7be4--c812c0e3-e3e2-4bb8-8186-a24ac8e65dd9.lovable.app-1778239274756.png" },
     ],
     links: [
       {
