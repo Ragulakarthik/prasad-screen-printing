@@ -6,7 +6,8 @@ import sampleTshirts from "@/assets/sample-tshirts.jpg";
 import sampleVisiting from "@/assets/sample-visiting.jpg";
 import sampleId from "@/assets/sample-id.jpg";
 import sampleFlags from "@/assets/sample-flags.jpg";
-import { site, stats } from "@/lib/site";
+import { site, stats, testimonials } from "@/lib/site";
+import { Quote } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -121,6 +122,28 @@ function HomePage() {
                 </span>
               </div>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="mx-auto max-w-7xl px-6 pb-24">
+        <div className="text-center max-w-2xl mx-auto">
+          <span className="ornament">Kind words</span>
+          <h2 className="mt-4 font-display text-4xl md:text-5xl text-primary">What our customers say</h2>
+          <p className="mt-4 text-muted-foreground">Real stories from families, schools and businesses we've printed for.</p>
+        </div>
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {testimonials.map((t) => (
+            <figure key={t.name}
+              className="relative rounded-3xl bg-card border border-border/60 p-6 shadow-card hover:shadow-elegant transition-shadow">
+              <Quote className="w-8 h-8 text-gold/40 absolute -top-3 left-5 bg-card rounded-full p-1.5 border border-border/60" />
+              <blockquote className="text-sm text-foreground leading-relaxed">"{t.quote}"</blockquote>
+              <figcaption className="mt-5 pt-4 border-t border-border/60">
+                <div className="font-display text-base text-primary">{t.name}</div>
+                <div className="text-xs text-muted-foreground">{t.role}</div>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </section>
