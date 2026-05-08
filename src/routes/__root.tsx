@@ -9,6 +9,9 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { WhatsAppFab } from "@/components/WhatsAppFab";
 
 function NotFoundComponent() {
   return (
@@ -72,11 +75,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Prasad Screen Printing — Wedding Cards, Custom Apparel & Prints" },
+      { name: "description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 1995." },
+      { name: "author", content: "Ragula Prasad" },
+      { property: "og:title", content: "Prasad Screen Printing" },
+      { property: "og:description", content: "Wedding cards, visiting cards, custom T-shirts, ID cards, flags and more — handcrafted since 1995." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -113,7 +116,14 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="flex flex-col min-h-screen">
+        <SiteHeader />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <SiteFooter />
+        <WhatsAppFab />
+      </div>
     </QueryClientProvider>
   );
 }
