@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Mail, MapPin, MessageCircle, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Instagram, Youtube, Clock, Globe } from "lucide-react";
 import { site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -12,14 +12,22 @@ export function SiteFooter() {
             {site.tagline}. Wedding invitations, visiting cards, custom apparel, ID cards & more —
             handcrafted with care by {site.owner}.
           </p>
+          <div className="mt-5 flex items-center gap-2 text-xs text-primary-foreground/60">
+            <Globe className="w-3.5 h-3.5" />
+            <span>We speak {site.languages.join(" · ")}</span>
+          </div>
           <div className="mt-6 flex gap-3">
-            <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer"
+            <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer" aria-label="WhatsApp"
                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-gold hover:text-gold-foreground flex items-center justify-center transition-colors">
               <MessageCircle className="w-4 h-4" />
             </a>
-            <a href={site.instagram} target="_blank" rel="noreferrer"
+            <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"
                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-gold hover:text-gold-foreground flex items-center justify-center transition-colors">
               <Instagram className="w-4 h-4" />
+            </a>
+            <a href={site.youtube} target="_blank" rel="noreferrer" aria-label="YouTube"
+               className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-gold hover:text-gold-foreground flex items-center justify-center transition-colors">
+              <Youtube className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -40,15 +48,13 @@ export function SiteFooter() {
             <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5 shrink-0" /> {site.phone}</li>
             <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5 shrink-0" /> {site.email}</li>
             <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 shrink-0" /> {site.address}</li>
+            <li className="flex items-start gap-2"><Clock className="w-4 h-4 mt-0.5 shrink-0" /> {site.hours}</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-primary-foreground/10">
-        <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/60">
-          <p>© {new Date().getFullYear()} {site.business}. All rights reserved.</p>
-          <a href={site.googleMapsUrl} target="_blank" rel="noreferrer" className="hover:text-gold">
-            Get directions →
-          </a>
+        <div className="mx-auto max-w-7xl px-6 py-5 text-center text-xs text-primary-foreground/60">
+          © {new Date().getFullYear()} {site.business}. All rights reserved.
         </div>
       </div>
     </footer>
