@@ -46,7 +46,9 @@ export function SiteFooter() {
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/60">
           <p>© {new Date().getFullYear()} {site.business}. All rights reserved.</p>
-          <p>Designed with love by Karthik for {site.owner}.</p>
+          <a href={site.googleMapsUrl} target="_blank" rel="noreferrer" className="hover:text-gold">
+            Get directions →
+          </a>
         </div>
       </div>
     </footer>

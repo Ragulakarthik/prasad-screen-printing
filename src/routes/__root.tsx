@@ -76,7 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Prasad Screen Printing — Wedding Cards, Custom Apparel & Prints" },
-      { name: "description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 1995." },
+      { name: "description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 2004." },
       { name: "author", content: "Ragula Prasad" },
       { property: "og:title", content: "Prasad Screen Printing" },
       { property: "og:description", content: "Wedding cards, visiting cards, custom T-shirts, ID cards, flags and more — handcrafted since 1995." },

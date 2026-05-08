@@ -24,7 +24,7 @@ export function SiteHeader() {
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-display text-lg font-semibold text-primary">{site.business}</span>
-            <span className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">Est. 1995</span>
+            <span className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">Est. 2004</span>
           </div>
         </Link>
 
