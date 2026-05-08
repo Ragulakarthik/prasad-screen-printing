@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import workTshirt from "@/assets/work-tshirt-swaggers.jpg";
-import workTshirt2 from "@/assets/work-tshirt-swaggers-2.jpg";
 import workMenuFolders from "@/assets/work-menu-folders.jpg";
 import workCapsWhite from "@/assets/work-caps-white.jpg";
 import workCapsRed from "@/assets/work-caps-red.jpg";
@@ -8,12 +7,17 @@ import workPens from "@/assets/work-pens.jpg";
 import workLanyards from "@/assets/work-lanyards.jpg";
 import workJuteBags from "@/assets/work-jute-bags.jpg";
 import workHospitalKits from "@/assets/work-hospital-kits.jpg";
+import sampleWedding from "@/assets/sample-wedding.jpg";
+import sampleVisiting from "@/assets/sample-visiting.jpg";
+import sampleId from "@/assets/sample-id.jpg";
+import sampleFlags from "@/assets/sample-flags.jpg";
+import heroCards from "@/assets/hero-cards.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: "Gallery — Prasad Screen Printing" },
-      { name: "description", content: "Real customer work from Prasad Screen Printing — custom T-shirts, caps, menu folders, pens, lanyards, jute bags and more." },
+      { name: "description", content: "Real customer work from Prasad Screen Printing — wedding cards, custom T-shirts, caps, menu folders, pens, lanyards, jute bags and more." },
       { property: "og:title", content: "Gallery — Prasad Screen Printing" },
       { property: "og:description", content: "Real customer work from two decades of screen printing craft." },
       { property: "og:image", content: workTshirt },
@@ -31,7 +35,11 @@ const items = [
   { src: workLanyards, label: "College ID Lanyards" },
   { src: workCapsWhite, label: "Corporate Caps", span: "md:col-span-2" },
   { src: workHospitalKits, label: "Hospital Kit Bags" },
-  { src: workTshirt2, label: "Farewell T-Shirts" },
+  { src: heroCards, label: "Wedding Cards" },
+  { src: sampleWedding, label: "Premium Invitations" },
+  { src: sampleVisiting, label: "Visiting Cards" },
+  { src: sampleId, label: "ID Cards & Pads" },
+  { src: sampleFlags, label: "Flags & Pens", span: "md:col-span-2" },
 ];
 
 function GalleryPage() {
