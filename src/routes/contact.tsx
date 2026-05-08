@@ -101,20 +101,21 @@ function ContactPage() {
             </div>
           </a>
 
-          <div className="p-5 rounded-2xl bg-card border border-border/60 shadow-card">
+          <a href={site.googleMapsUrl} target="_blank" rel="noreferrer"
+             className="block p-5 rounded-2xl bg-card border border-border/60 shadow-card hover:shadow-elegant hover:border-gold/40 transition-all">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-secondary text-primary flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">Visit</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">Visit · Tap for directions</div>
                 <div className="mt-1 text-sm text-foreground">{site.address}</div>
                 <div className="mt-2 flex items-center gap-1 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" /> {site.hours}
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Form */}
