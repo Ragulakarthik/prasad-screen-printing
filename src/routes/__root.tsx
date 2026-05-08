@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Family-run screen printing studio crafting wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more since 2004." },
       { name: "author", content: "Ragula Prasad" },
       { property: "og:title", content: "Prasad Screen Printing" },
-      { property: "og:description", content: "Wedding cards, visiting cards, custom T-shirts, ID cards, flags and more — handcrafted since 1995." },
+      { property: "og:description", content: "Wedding cards, visiting cards, custom T-shirts, ID cards, flags and more — handcrafted since 2004." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },

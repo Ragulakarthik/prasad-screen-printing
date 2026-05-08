@@ -18,7 +18,7 @@ export const Route = createFileRoute("/about")({
 
 const values = [
   { icon: Heart, title: "Crafted with love", desc: "Every print is checked by hand before it leaves our press." },
-  { icon: Award, title: "Trusted since 1995", desc: "Three decades of weddings, celebrations and events." },
+  { icon: Award, title: "Trusted since 2004", desc: "Two decades of weddings, celebrations and events." },
   { icon: Sparkles, title: "Quality first", desc: "Premium inks, premium paper, premium finishes — always." },
   { icon: Users, title: "Family-run", desc: "Personal service from a family who knows your name." },
 ];
