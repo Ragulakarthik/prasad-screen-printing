@@ -18,7 +18,7 @@ export const Route = createFileRoute("/about")({
 
 const values = [
   { icon: Heart, title: "Crafted with love", desc: "Every print is checked by hand before it leaves our press." },
-  { icon: Award, title: "Trusted since 1995", desc: "Three decades of weddings, celebrations and events." },
+  { icon: Award, title: "Trusted since 2004", desc: "Two decades of weddings, celebrations and events." },
   { icon: Sparkles, title: "Quality first", desc: "Premium inks, premium paper, premium finishes — always." },
   { icon: Users, title: "Family-run", desc: "Personal service from a family who knows your name." },
 ];
@@ -30,11 +30,11 @@ function AboutPage() {
         <div>
           <span className="ornament">Our story</span>
           <h1 className="mt-4 font-display text-5xl md:text-6xl text-primary leading-tight">
-            Three decades.<br /><span className="text-gradient-gold italic">One family.</span>
+            Two decades.<br /><span className="text-gradient-gold italic">One family.</span>
           </h1>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            {site.business} began in 1995 in a small workshop with a single screen, a squeegee, and
-            a promise: every print would leave the press only if it was perfect. Three decades later,
+            {site.business} began in 2004 in a small workshop with a single screen, a squeegee, and
+            a promise: every print would leave the press only if it was perfect. Two decades later,
             that promise still holds.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
@@ -48,6 +48,34 @@ function AboutPage() {
           <div className="relative rounded-3xl overflow-hidden shadow-elegant border border-gold/20">
             <img src={workshop} alt="Screen printing in action" loading="lazy"
               className="w-full aspect-[4/3] object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* Founder portrait */}
+      <section className="mx-auto max-w-5xl px-6 py-12">
+        <div className="grid md:grid-cols-[260px_1fr] gap-8 items-center rounded-3xl bg-card border border-border/60 p-8 md:p-10 shadow-card">
+          <div className="relative mx-auto md:mx-0">
+            <div className="absolute -inset-3 bg-gold-gradient opacity-20 blur-2xl rounded-full" />
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-gold/40 shadow-gold bg-secondary flex items-center justify-center">
+              {/* Replace /founder.jpg with Karthik's father's photo (place file in public/founder.jpg) */}
+              <img
+                src="/founder.jpg"
+                alt={`${site.owner}, founder of ${site.business}`}
+                className="w-full h-full object-cover"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+              />
+              <span className="absolute font-display text-5xl text-primary/40 select-none">RP</span>
+            </div>
+          </div>
+          <div>
+            <span className="ornament">Meet the founder</span>
+            <h2 className="mt-3 font-display text-3xl md:text-4xl text-primary">{site.owner}</h2>
+            <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+              For over twenty years, {site.owner} has personally overseen every order that leaves the
+              studio — from the first sketch to the final pack. His eye for detail and care for each
+              customer is the heartbeat of {site.business}.
+            </p>
           </div>
         </div>
       </section>

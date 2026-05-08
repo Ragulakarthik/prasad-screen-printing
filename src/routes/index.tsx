@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Prasad Screen Printing — Wedding Cards, T-Shirts & Custom Prints" },
-      { name: "description", content: "Handcrafted wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more. Family-run screen printing studio since 1995." },
+      { name: "description", content: "Handcrafted wedding invitations, visiting cards, custom T-shirts, ID cards, flags & more. Family-run screen printing studio since 2004." },
       { property: "og:title", content: "Prasad Screen Printing" },
       { property: "og:description", content: "Wedding cards, visiting cards, custom T-shirts, ID cards, flags and more." },
       { property: "og:image", content: heroCards },
@@ -36,13 +36,13 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 md:pt-24 md:pb-32 grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative z-10">
-            <span className="ornament">Since 1995</span>
+            <span className="ornament">Since 2004</span>
             <h1 className="mt-6 font-display text-5xl md:text-7xl font-semibold leading-[1.05] text-primary">
               Every print<br />tells a <span className="text-gradient-gold italic">story.</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
               From the first wedding invitation to the last cricket jersey — {site.owner} and his
-              family have been crafting beautiful screen prints for three decades.
+              family have been crafting beautiful screen prints for two decades.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-royal text-primary-foreground font-medium shadow-elegant hover:shadow-gold transition-all hover:scale-[1.02]">
@@ -53,7 +53,7 @@ function HomePage() {
               </Link>
             </div>
             <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
-              <div className="flex items-center gap-2"><Award className="w-4 h-4 text-gold" /> Trusted since 1995</div>
+              <div className="flex items-center gap-2"><Award className="w-4 h-4 text-gold" /> Trusted since 2004</div>
               <div className="flex items-center gap-2"><Clock className="w-4 h-4 text-gold" /> Fast turnaround</div>
             </div>
           </div>
